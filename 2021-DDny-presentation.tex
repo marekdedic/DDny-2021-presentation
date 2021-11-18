@@ -68,20 +68,20 @@
 
 % Title card
 \AtBeginSection[]{
-  \begin{frame}
-  \vfill
-  \centering
-  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
-    \usebeamerfont{title}\insertsectionhead\par%
-  \end{beamercolorbox}
-  \vfill
-  \end{frame}
+	\begin{frame}
+	\vfill
+	\centering
+	\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+		\usebeamerfont{title}\insertsectionhead\par%
+	\end{beamercolorbox}
+	\vfill
+\end{frame}
 }
 
 \begin{document}
 
 \begin{frame}
-  \titlepage
+	\titlepage
 \end{frame}
 
 % Body
@@ -90,11 +90,11 @@
 
 \begin{frame}{Malware moving infrastructure}
 	\begin{itemize}
-	      \item Malware in the \enquote{wild} sometimes ceases using a particular piece of infrastructure and moves to a different one
-	      \item Currently, we have no way to detect this
-	      \item We would like to detect the infrastructure going dark and flag the CT as probably having new infra
-	      \item Ideally, as the next step, we would like to predict the new infrastructure the particular CT might use and suggest it for manual review
-	      \item We have some theoretical background that should help with this - the notion of subgraph isomorphisms
+		\item Malware in the \enquote{wild} sometimes ceases using a particular piece of infrastructure and moves to a different one
+		\item Currently, we have no way to detect this
+		\item We would like to detect the infrastructure going dark and flag the CT as probably having new infra
+		\item Ideally, as the next step, we would like to predict the new infrastructure the particular CT might use and suggest it for manual review
+		\item We have some theoretical background that should help with this - the notion of subgraph isomorphisms
 	\end{itemize}
 \end{frame}
 
@@ -130,13 +130,13 @@
 
 \begin{frame}{...and some theory behind it}
 	\begin{itemize}
-	  \item Graph homomorphisms (i. e. subgraph isomorphism)
+		\item Graph homomorphisms (i. e. subgraph isomorphism)
 \[ uv \in E \left( G \right) \implies \varphi \left( u \right) \varphi \left( v \right) \in E \left( H \right) \]
-	  \item Injective graph homomorphisms (i. e. subgraph isomorphism)
+		\item Injective graph homomorphisms (i. e. subgraph isomorphism)
 \[ \forall u, v \in V \left( G \right) \quad \varphi \left( u \right) = \varphi \left( v \right) \implies u = v \]
-	  \item Partially injective graph homomorphisms (i. e. subgraph isomorphism)
+		\item Partially injective graph homomorphisms (i. e. subgraph isomorphism)
 \[ \forall uv \in \mathcal{C} \quad \varphi \left( u \right) = \varphi \left( v \right) \implies u = v \]
-	    where \( \mathcal{C} \subseteq \left( V \left( G \right) \right)^2 \setminus E \left( G \right) \)
+			where \( \mathcal{C} \subseteq \left( V \left( G \right) \right)^2 \setminus E \left( G \right) \)
 	\end{itemize}
 \end{frame}
 
@@ -174,7 +174,7 @@
 
 \begin{frame}
 	\centering
-	% TODO
+	% TODO - conclusion
 \end{frame}
 
 \end{document}
